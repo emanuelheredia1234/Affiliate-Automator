@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Merger</title>
+</head>
+<body>
+    <h1>Merge Videos</h1>
+    <form action="/merge" method="post" enctype="multipart/form-data">
+        <p>Select two or more videos to merge (order matters):</p>
+        <input type="file" name="videos" multiple accept="video/*" required>
+        <button type="submit">Upload & Merge</button>
+    </form>
+    {% if merged_url %}
+    <p>Download merged video: <a href="{{ merged_url }}">{{ merged_url }}</a></p>
+    {% endif %}
+</body>
+</html>
