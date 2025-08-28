@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Product Creator</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    label { display: block; margin-top: 1rem; }
+    textarea { width: 100%; height: 120px; }
+    #products { margin-top: 2rem; }
+    .product { border: 1px solid #ccc; padding: 1rem; margin-bottom: 1rem; }
+  </style>
+</head>
+<body>
+  <h1>Digital Product Creator</h1>
+  <p>Enter a prompt describing the product you want to generate.</p>
+  <label for="prompt">Prompt:</label>
+  <textarea id="prompt"></textarea>
+  <button id="generate">Generate Product</button>
+
+  <div id="output" style="white-space: pre-wrap; margin-top: 1rem;"></div>
+
+  <h2>Create Product Listing</h2>
+  <label>Name:</label>
+  <input id="name" type="text" />
+  <label>Description:</label>
+  <textarea id="description"></textarea>
+  <button id="save">Save Product</button>
+
+  <div id="products"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
